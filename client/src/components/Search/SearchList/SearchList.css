@@ -1,0 +1,122 @@
+.searchList-box-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(94, 94, 94, 0.2);
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+  padding: 10px 0px;
+}
+
+.style-searchList {
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 0px;
+}
+.items-not {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
+}
+.style-searchList .searchList-box {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(79, 79, 79);
+  word-break: break-all;
+  font-size: 0.8rem;
+  color: white;
+}
+
+/* .style-searchList .searchList-box ul {
+  margin: 30px;
+} */
+
+.style-searchList .searchList-box:last-child {
+  border-bottom: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.item-details {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+/* .item-details p {
+ 
+} */
+
+.titlt-wrap h1 {
+  font-size: 0.9rem;
+}
+.items-list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.items-list :nth-child(3) {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgb(173, 173, 173);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.img {
+  min-width: 100px;
+  height: 100%;
+  object-fit: contain;
+
+  border-radius: 10px;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+}
+.titlt-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.titlt-wrap p {
+  background-color: rgb(59, 59, 59);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: rgb(153, 153, 153);
+  font-size: 0.6rem;
+}
+.category {
+  color: rgb(204, 204, 204);
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.price {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  width: 60px;
+  padding: 5px;
+  border-radius: 20px;
+  border: transparent;
+  background-color: rgb(141, 27, 255);
+  cursor: pointer;
+}
+.price:hover {
+  background-color: rgb(114, 12, 216);
+  transition: background-color all;
+}
